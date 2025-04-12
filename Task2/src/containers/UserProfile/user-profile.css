@@ -1,0 +1,146 @@
+#profile-container {
+  width: 100%;
+  height: auto;
+  background-color: #f8dfba;
+  color: #421206;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#profile-space-placeholder {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8dfba;
+  color: #421206;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.user-info {
+  text-align: center;
+  margin-top: 125px;
+}
+
+.profile-picture {
+  width: 40vw;
+  height: auto;
+  border-radius: 4%;
+  margin-bottom: 25px;
+}
+
+@media(max-width: 500px) {
+  .profile-picture {
+    width: 315px;
+  }
+}
+
+.welcome-message {
+  font-size: 30px;
+}
+
+/* FAVORITE RECIPES */
+
+.favorite-recipes-title-contain {
+  height: 250px;
+  background-image: url('../../photos/cooking.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin-top: 80px;
+  margin-bottom: 75px;
+  color: #f8dfba;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite-recipes-title {
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+.favorite-contain {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.fav-recipes-items {
+  margin: 25px;
+  text-align: center;
+}
+
+#fav-recipe-photo {
+  width: 350px;
+  height: auto;
+  border-radius: 5%;
+}
+
+#fav-recipe-title {
+  width: 350px;
+  height: auto;
+}
+
+#remove-recipe-from-favorites {
+  margin-top: 25px;
+  width: 85px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background-color: #421206;
+  color: #f8dfba;
+  cursor: pointer;
+}
+
+#remove-recipe-from-favorites:active {
+  transform: translateY(2px);
+}
+
+#results-link:hover {
+  opacity: 0.65;
+}
+
+/* FAVORITE VIDEOS */
+
+.favorite-videos-contain {
+  height: 250px;
+  background-image: url('../../photos/bbq.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin-top: 100px;
+  margin-bottom: 75px;
+  color: #f8dfba;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.favorite-videos-title {
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+#remove-video-from-favorites {
+  margin-top: 25px;
+  width: 85px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background-color: #421206;
+  color: #f8dfba;
+  cursor: pointer;
+}
+
+#remove-video-from-favorites:active {
+  transform: translateY(2px);
+}

@@ -1,0 +1,177 @@
+.search-results {
+  height: auto;
+  width: 100%;
+  background-color: #f8dfba;
+  color: #421206;
+}
+
+#results-main-title {
+  padding-top: 105px;
+  text-align: center;
+  font-size: 45px;
+  letter-spacing: 4px;
+}
+
+#results-titles {
+  font-size: 30px;
+  width: 350px;
+  text-align: center;
+  margin-left: 25px;
+}
+
+#results-rating {
+  text-align: center;
+}
+
+#results-images {
+  height: auto;
+  width: 350px;
+  margin: 25px;
+}
+
+.results-contain {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.results-list {
+  padding-top: 50px;
+  cursor: pointer;
+}
+
+.results-list:hover {
+  opacity: 0.65;
+}
+
+#results-link {
+  text-decoration: none;
+  color: #421206;
+}
+
+/* BUTTONS */
+
+.previous-next-contain-results {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.previous-next-contain-youtube {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.previous-button {
+  margin-right: 5px;
+  width: 85px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background-color: #421206;
+  color: #f8dfba;
+  cursor: pointer;
+}
+
+.previous-button:hover {
+  opacity: 0.8;
+}
+
+.previous-button:active {
+  transform: translateY(2px);
+}
+
+.next-button {
+  width: 85px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background-color: #421206;
+  color: #f8dfba;
+  cursor: pointer;
+}
+
+
+.next-button:hover {
+  opacity: 0.8;
+}
+
+.next-button:active {
+  transform: translateY(2px);
+}
+
+#add-vid-to-favs {
+  margin-top: 25px;
+  width: 85px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background-color: #421206;
+  color: #f8dfba;
+  cursor: pointer;
+}
+
+#add-vid-to-favs:active {
+  transform: translateY(2px);
+}
+
+/* VIDEOS */
+
+#video-section-title-contain {
+  color: #f8dfba;
+  width: 100%;
+  height: 250px;
+  background-image: url('../../photos/food-and-wine.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+
+#video-results-title {
+  padding-top: 105px;
+  text-align: center;
+  font-size: 45px;
+  padding-bottom: 85px;
+  letter-spacing: 4px;
+}
+
+.videos-contain {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#video-list-item {
+  width: 550px;
+  height: auto;
+  list-style: none;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+
+.iframe {
+  border: none;
+  width: 515px;
+  height: 290px;
+  margin-bottom: 25px;
+}
+
+.video-description {
+  margin-top: 25px;
+}
+
+@media(max-width: 500px) {
+  .iframe {
+    width: 315px;
+    height: 190px;
+  }
+
+  #video-list-item {
+    width: 315px;
+  }
+}

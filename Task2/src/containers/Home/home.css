@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.Home-header {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8dfba;
+  font-size: 50px;
+  font-family: 'EB Garamond', serif;
+  color: #421206;
+  font-weight: bold;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#home-photo {
+  width: 400px;
+  height: auto;
+  border-radius: 50%;
+  padding-bottom: 10px;
+}
+
+.Home-header h1 {
+  text-align: center;
+}
+
+@media(max-width: 500px) {
+  #home-photo {
+    width: 300px;
+  }
+  .Home-header {
+    font-size: 30px;
+    height: 75vh;
+    padding-top: 75px;
+    padding-bottom: 50px;
+  }
+}
+
+/* SEARCH */
+
+.recipe-search {
+  height: 300px;
+  background-image: url('../../photos/kitchen2.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f8dfba;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.search-contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 25px;
+}
+
+#search-recipes {
+  margin-bottom: 25px;
+  letter-spacing: 4px;
+}
+
+#search-input {
+  margin-bottom: 25px;
+  width: 250px;
+  outline: none;
+  background-color: #f8dfba;
+  color: #421206;
+  border: 2px solid #f8dfba;
+  height: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+
+#search-button {
+  width: 75px;
+  height: 25px;
+  outline: none;
+  background-color: #f8dfba;
+  color: #421206;
+  cursor: pointer;
+  border: 1px solid #f8dfba;
+}
+
+/* TRENDING RECIPES */
+
+#trending-recipes {
+  height: auto;
+  background-color: #f8dfba;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-bottom: 85px;
+}
+
+#trending-title {
+  text-align: center;
+  background-color: #f8dfba;
+  color: #421206;
+  height: 100px;
+  padding-top: 50px;
+  font-size: 40px;
+  padding-top: 125px;
+  letter-spacing: 4px;
+}
+
+#trending-images {
+  height: auto;
+  width: 350px;
+  margin: 25px;
+}
+
+#trending-recipes-titles {
+  text-align: center;
+}
+
+#trending-recipes-list:hover {
+  opacity: 0.65;
+  cursor: pointer;
+}
+
+.previous-next-contain-home {
+  background-color: #f8dfba;
+  padding-bottom: 50px;
+  text-align: center;
+}

@@ -1,0 +1,66 @@
+/* ImageResults.css */
+
+.image-results-container {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .grid-list {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: auto;
+  }
+  
+  .grid-tile {
+    transition: transform 0.3s ease;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 0 21%; /* Adjust the width of each tile */
+    
+  }
+  
+  .grid-tile:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .tile-actions {
+    display: flex;
+    gap: 6px;
+    padding-right: 4px;
+  }
+  
+  .dialog-image {
+    width: 100%;  
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    max-height: 80vh; /* Limit the height of the image */
+    object-fit: cover; /* Maintain aspect ratio */
+    overflow: hidden; /* Hide overflow */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    transition: transform 0.3s ease;
+    
+  }
+  
+  @media (max-width: 768px) {
+    .grid-list {
+      justify-content: center;
+    }
+  }
+  
+  .grid-tile img {
+    transition: filter 0.3s ease;
+  }
+  
+  .grid-tile:hover img {
+    filter: brightness(1.1);
+  }
+  
+  .tile-actions .MuiIconButton-root:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
